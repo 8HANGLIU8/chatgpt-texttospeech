@@ -12,7 +12,7 @@ Streaming real time audio
 
 OPENAI_API_KEY='your-api-key-here'
 
-2. Create an envirionment if you didn't install Python Library: 
+2. Create an environment if you didn't install Python Library: 
 
 python3 -m venv tts 
 source tts/bin/activate
@@ -20,6 +20,13 @@ python3 tts.py
 
 3. create a .gitignore file where you'll write 'kaepyi.py'
 
-4. When you'll run, they'll be a music file called sound.mp3 that will pop in your folder.
+4. Install packages
 
-5. 
+python3 -m venv tts 
+source tts/bin/activate
+pip install pygame 
+pip install openai 
+
+5. When you'll run, they'll be a sound file called sound.mp3 that will pop in your folder and a pycache is there is.
+
+

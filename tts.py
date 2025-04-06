@@ -1,6 +1,4 @@
 from kaepyi import OPENAI_API_KEY
-
-
 from pathlib import Path
 from openai import OpenAI
 
@@ -14,3 +12,19 @@ with client.audio.speech.with_streaming_response.create(
     instructions="Speak with excitement and energy.",
 ) as response:
     response.stream_to_file(speech_file_path)
+
+
+#----------------------------------------------#
+
+import pygame
+
+pygame.init()
+pygame.mixer.init()
+
+pygame.mixer.music.load("sound.mp3")
+pygame.mixer.music.play()
+
+while pygame.mixer.music.get_busy():
+    pygame.time.Clock().tick(10)
+
+pygame.quit()
