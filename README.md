@@ -29,3 +29,4 @@ pip install openai
 
 5. When you'll run, they'll be a sound file called sound.mp3 that will pop in your folder and a pycache is there is.
 
+6. Some modification can be made in tts.py such as the model, the voice, the input and instructions for chatgpt
